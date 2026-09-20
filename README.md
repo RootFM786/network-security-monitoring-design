@@ -45,6 +45,8 @@ The proposed monitoring stack centred on **Elasticsearch, Logstash and Kibana (E
 
 The design used Packetbeat as the main network-traffic analysis component for session and statistical data, with Kibana-style visualisation and centralised analysis.
 
+More detail is available in [docs/elk-monitoring-design.md](docs/elk-monitoring-design.md).
+
 ### 3. Detection Use Cases
 
 Examples considered in the original design included:
@@ -64,6 +66,8 @@ More detail is available in [docs/detection-use-cases.md](docs/detection-use-cas
 The project compared Snort and Suricata as network intrusion-detection options.
 
 The original analysis discussed rule compatibility, file inspection, protocol identification, multithreading and ease of configuration. Suricata was presented as the stronger fit for the proposed environment at the time of the assessment.
+
+More detail is available in [docs/snort-vs-suricata.md](docs/snort-vs-suricata.md).
 
 ### 5. SOC and Business Considerations
 
@@ -116,5 +120,7 @@ The original coursework has not been rewritten to claim deployment or hands-on i
 ├── README.md
 └── docs/
     ├── telemetry-strategy.md
-    └── detection-use-cases.md
+    ├── detection-use-cases.md
+    ├── snort-vs-suricata.md
+    └── elk-monitoring-design.md
 ```
